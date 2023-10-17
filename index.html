@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/styles.css">
+        <title>Calculator - Benedetti Gonzalo</title>
+    </head>
+    <body>
+        <div class="title">
+            <h1>CALCULATOR</h1>
+            <p>This is a project for practice HTML, CSS and JavaScript</p>
+        </div>
+
+        <div class="container">
+            <div class="containerBtn">
+                <input type="text" class="windows" id="windows" value="" readonly>
+            </div>            
+            <div class="containerBtn">
+                <input type="button" class="btn clean" value="C" onclick="clean(`C`)">
+                <input type="button" class="btn oper" value="*" onclick="symbol(`*`)">
+                <input type="button" class="btn oper" value="/" onclick="symbol(`/`)">
+                <input type="button" class="btn" value="." onclick="symbol(`.`)">
+            </div>
+            <div class="containerBtn">
+                <input type="button" class="btn" value="7" onclick="symbol(`7`)">
+                <input type="button" class="btn" value="8" onclick="symbol(`8`)">
+                <input type="button" class="btn" value="9" onclick="symbol(`9`)">
+                <input type="button" class="btn oper" value="+" onclick="symbol(`+`)">
+            </div>
+            <div class="containerBtn">
+                <input type="button" class="btn" value="4" onclick="symbol(`4`)">
+                <input type="button" class="btn" value="5" onclick="symbol(`5`)">
+                <input type="button" class="btn" value="6" onclick="symbol(`6`)">
+                <input type="button" class="btn oper" value="-" onclick="symbol(`-`)">
+            </div>
+            <div class="containerBtn">
+                <input type="button" class="btn" value="1" onclick="symbol(`1`)">
+                <input type="button" class="btn" value="2" onclick="symbol(`2`)">
+                <input type="button" class="btn" value="3" onclick="symbol(`3`)">
+                <input type="button" class="btn eq" value="=" onclick="eq(`=`)">
+            </div>
+            <div class="containerBtn">
+                <input type="button" class="btnZero" value="0" onclick="symbol(`0`)">
+            </div>
+        </div>
+
+        <script src="./js/main.js"></script>
+    </body>
+</html>
